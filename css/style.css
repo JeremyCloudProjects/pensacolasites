@@ -368,15 +368,15 @@ h1, h2, h3, h4 {
 
 /* Delta formation: lead at right, rows stagger back-left */
 /* Lead */
-.ba-jet--1 { top: 48%; right: 28%; width: 295px; height: 60px; }
+.ba-jet--1 { top: 48%; right: 26%; width: 300px; height: 69px; }
 /* Row 2 */
-.ba-jet--2 { top: 35%; right: 35%; width: 285px; height: 58px; }
-.ba-jet--3 { top: 61%; right: 35%; width: 285px; height: 58px; }
+.ba-jet--2 { top: 32%; right: 34%; width: 290px; height: 67px; }
+.ba-jet--3 { top: 64%; right: 34%; width: 290px; height: 67px; }
 /* Row 3 */
-.ba-jet--4 { top: 22%; right: 42%; width: 275px; height: 56px; }
-.ba-jet--5 { top: 74%; right: 42%; width: 275px; height: 56px; }
+.ba-jet--4 { top: 17%; right: 42%; width: 280px; height: 65px; }
+.ba-jet--5 { top: 79%; right: 42%; width: 280px; height: 65px; }
 /* Row 4 — slot */
-.ba-jet--6 { top: 10%; right: 49%; width: 265px; height: 54px; }
+.ba-jet--6 { top: 5%; right: 50%; width: 270px; height: 63px; }
 
 /* Rear jets fade further */
 .ba-jet--2, .ba-jet--3 { fill: rgba(255, 255, 255, 0.11); }
