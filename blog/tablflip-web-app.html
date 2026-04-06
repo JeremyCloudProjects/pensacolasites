@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TablFlip: Building a Custom Web Application — PensacolaSites</title>
+    <meta name="description" content="A look inside building TablFlip.com — a focused, fast web app with a clean user experience.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="../" class="logo">Pensacola<span>Sites</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../#about">About</a></li>
+                <li><a href="../#work">Work</a></li>
+                <li><a href="../#packages">Packages</a></li>
+                <li><a href="./">Blog</a></li>
+                <li><a href="../#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay">
+        <ul class="mobile-links">
+            <li><a href="../#about">About</a></li>
+            <li><a href="../#work">Work</a></li>
+            <li><a href="../#packages">Packages</a></li>
+            <li><a href="./">Blog</a></li>
+            <li><a href="../#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <div class="container">
+            <a class="blog-back" href="./">&larr; Back to Blog</a>
+
+            <div class="blog-post-header">
+                <span class="blog-tag">Case Study</span>
+                <h1>TablFlip: Building a Custom Web Application</h1>
+                <div class="blog-meta">February 2026</div>
+            </div>
+
+            <div class="blog-content">
+                <h2>Web App vs. Website: A Different Kind of Build</h2>
+                <p>There is an important distinction between building a website and building a web application. A website presents information. A web app does something. Users interact with it, manipulate data, trigger actions, and expect the interface to respond immediately. TablFlip.com falls squarely into the web app category, and that shaped every decision we made during the build.</p>
+                <p>When the TablFlip project came to PensacolaSites, the goal was clear: build a focused, fast web application with a user experience that stays out of the way. No feature bloat, no unnecessary complexity. Just a clean tool that does its job well.</p>
+
+                <h2>The Case for Hand-Coded Web Apps</h2>
+                <p>Most web applications today are built on heavy JavaScript frameworks. React, Vue, Angular. These tools have their place, but they also come with significant overhead. Bundle sizes balloon, build pipelines get complex, and the developer experience can start to overshadow the user experience.</p>
+                <p>For TablFlip, we took a different approach. We hand-coded the front end with vanilla JavaScript, modern CSS, and clean HTML. This gave us several advantages:</p>
+                <ul>
+                    <li><strong>Smaller payload.</strong> No framework runtime shipping to the browser. The code that loads is the code that runs the app.</li>
+                    <li><strong>Faster initial load.</strong> Without a framework bootstrapping process, the application is interactive almost immediately.</li>
+                    <li><strong>Full control.</strong> Every interaction, animation, and state change is handled by code we wrote and understand completely.</li>
+                    <li><strong>Simpler maintenance.</strong> No dependency updates breaking things six months after launch. No framework deprecation cycles to chase.</li>
+                </ul>
+
+                <h2>User Experience Decisions That Shaped the Build</h2>
+                <p>The core philosophy behind TablFlip's UX was reduction. We asked one question repeatedly throughout the build: can we remove this and still deliver the same value? If the answer was yes, it went. That kind of discipline is hard, but it produces better products.</p>
+                <p>Navigation was stripped to essentials. Form fields were minimized. Feedback was made instant and obvious. Every interaction was designed to feel snappy, with zero ambiguity about what happened when a user clicked, tapped, or typed.</p>
+                <p>We paid particular attention to empty states and error handling. These are the moments most apps get wrong. When something fails or when there is no data to display, the interface should still feel intentional. We designed clear, helpful messaging for every edge case so users never hit a dead end.</p>
+
+                <h2>Performance Optimization at Every Layer</h2>
+                <p>A web app that feels slow is a web app that gets abandoned. We treated performance as a first-class concern from day one, not something to optimize later.</p>
+                <p>On the front end, we minimized DOM manipulation, debounced input handlers, and used CSS transitions instead of JavaScript animations wherever possible. Assets were compressed, images optimized, and scripts loaded asynchronously to prevent render blocking.</p>
+                <p>We also focused on perceived performance. Even when an operation takes a moment, the interface provides immediate feedback. Loading indicators appear instantly, transitions smooth over data fetches, and the interface never freezes or goes blank during state changes.</p>
+
+                <h2>Building for the Long Term</h2>
+                <p>One of the things we emphasize at PensacolaSites is code ownership. When we hand off a project, the client gets clean, well-structured source code that any competent developer can pick up and extend. TablFlip was no different.</p>
+                <p>The codebase follows clear conventions. Functions are named descriptively. Styles are organized by component. The file structure mirrors the application structure so navigating the code feels intuitive. There is no magic, no black boxes, no framework-specific patterns that require specialized knowledge to understand.</p>
+
+                <h2>The Result</h2>
+                <p>TablFlip launched as a fast, focused web application that does exactly what it needs to do and nothing more. The interface is clean, the interactions are responsive, and the codebase is built to last. It is a project that highlights why the hand-coded approach works especially well for web applications where performance and control matter most.</p>
+                <p>Building custom web apps from Pensacola means we can offer the kind of focused, senior-level development work that larger agencies struggle with. No layers of project management diluting the work. Just direct collaboration between developer and product.</p>
+            </div>
+
+            <div class="blog-cta">
+                <h3>Ready to Build Something?</h3>
+                <p>Let's talk about your project.</p>
+                <a class="btn btn-accent" href="../#contact">Get in Touch</a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="../" class="logo">Pensacola<span>Sites</span></a>
+            <p>Hand-coded with care in Pensacola, FL. &copy; 2026 PensacolaSites.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

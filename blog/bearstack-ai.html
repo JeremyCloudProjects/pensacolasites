@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building BearStack: An AI-Powered Platform — PensacolaSites</title>
+    <meta name="description" content="How PensacolaSites built BearStack.ai — a modern AI platform with clean, hand-coded architecture.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="../" class="logo">Pensacola<span>Sites</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../#about">About</a></li>
+                <li><a href="../#work">Work</a></li>
+                <li><a href="../#packages">Packages</a></li>
+                <li><a href="./">Blog</a></li>
+                <li><a href="../#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay">
+        <ul class="mobile-links">
+            <li><a href="../#about">About</a></li>
+            <li><a href="../#work">Work</a></li>
+            <li><a href="../#packages">Packages</a></li>
+            <li><a href="./">Blog</a></li>
+            <li><a href="../#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <div class="container">
+            <a class="blog-back" href="./">&larr; Back to Blog</a>
+
+            <div class="blog-post-header">
+                <span class="blog-tag">Case Study</span>
+                <h1>Building BearStack: An AI-Powered Platform</h1>
+                <div class="blog-meta">March 2026</div>
+            </div>
+
+            <div class="blog-content">
+                <h2>The Challenge</h2>
+                <p>When the BearStack team approached us about building their AI-powered platform, they had a clear vision: create a tool that feels as fast and intuitive as the AI technology powering it. The last thing users want from an AI product is a sluggish interface that undermines the speed of the intelligence behind it. Our job was to build a front end that could keep up.</p>
+                <p>BearStack.ai needed to handle complex data displays, real-time interactions, and a dense feature set without ever feeling heavy. That meant every architectural decision mattered. There was no room for bloated frameworks or unnecessary dependencies dragging things down.</p>
+
+                <h2>Why Hand-Coded Architecture Matters for AI Products</h2>
+                <p>AI platforms present a unique front-end challenge. Unlike a standard business website, an AI tool often needs to render dynamic content streams, manage stateful interactions, and present layered data in a way that users can actually parse. Template-based solutions and page builders fall apart under that kind of pressure.</p>
+                <p>We built BearStack with clean, hand-coded HTML, CSS, and JavaScript from the ground up. This gave us complete control over the DOM, the rendering pipeline, and how every component loads and behaves. There are no hidden layers of abstraction adding latency. Every element on the page exists because we put it there deliberately.</p>
+                <p>Working from our home base in Pensacola, FL, we were able to focus on the kind of detailed, hands-on development that a project like this demands. No account managers or layers of bureaucracy between the developer and the code.</p>
+
+                <h2>Performance as a Feature</h2>
+                <p>For an AI product, performance is not a nice-to-have. It is the product experience. Users interacting with AI tools expect near-instant feedback. A half-second delay in rendering a response can make the entire platform feel broken, even if the AI itself is fast.</p>
+                <p>We focused on several key performance strategies for BearStack:</p>
+                <ul>
+                    <li><strong>Minimal asset weight.</strong> Every stylesheet and script was written lean. No utility framework bloat, no unused CSS classes shipping to the browser.</li>
+                    <li><strong>Efficient rendering.</strong> Dynamic content areas were built to update only what changed, not re-render entire sections of the page.</li>
+                    <li><strong>Lazy loading for non-critical elements.</strong> Anything below the fold or outside the primary interaction flow loads only when needed.</li>
+                    <li><strong>Optimized font loading.</strong> Web fonts were preconnected and loaded with display swap to prevent layout shifts.</li>
+                </ul>
+
+                <h2>Responsive Design for Complex Interfaces</h2>
+                <p>One of the biggest design challenges with BearStack was making complex data displays work across screen sizes. AI platforms tend to be data-dense. Dashboards, output panels, configuration options, and interactive elements all compete for space.</p>
+                <p>On desktop, we had room to spread out. Side panels, multi-column layouts, and hover interactions could all play a role. But on mobile, that same information needed to collapse into a linear, scrollable flow without losing context or usability.</p>
+                <p>We built a responsive system that does not just shrink elements down. It reorganizes them. Navigation patterns shift, data displays reflow into stacked cards, and interactive elements resize to remain tap-friendly. The mobile experience is not a compromise. It is a considered design in its own right.</p>
+
+                <h2>Clean Code, Long-Term Value</h2>
+                <p>One of the principles we bring to every project at PensacolaSites is that the client owns their code. With BearStack, that meant writing code that is not just functional but readable and maintainable. No proprietary lock-in, no tangled dependency trees that require a specific developer to untangle.</p>
+                <p>The codebase is structured with clear separation of concerns, well-documented modules, and consistent naming conventions. If the BearStack team wants to bring on additional developers down the road, the code will not be a barrier. It will be an asset.</p>
+
+                <h2>The Result</h2>
+                <p>BearStack.ai launched with a fast, clean interface that puts the AI experience front and center. The platform loads quickly, responds instantly to user input, and looks sharp on every device. It is exactly the kind of project that demonstrates why hand-coded development still matters, especially when performance is not optional.</p>
+                <p>Building for the AI space from Pensacola might seem unconventional, but it is exactly the kind of focused, distraction-free environment that produces great work. No overhead, no filler. Just clean code that performs.</p>
+            </div>
+
+            <div class="blog-cta">
+                <h3>Ready to Build Something?</h3>
+                <p>Let's talk about your project.</p>
+                <a class="btn btn-accent" href="../#contact">Get in Touch</a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="../" class="logo">Pensacola<span>Sites</span></a>
+            <p>Hand-coded with care in Pensacola, FL. &copy; 2026 PensacolaSites.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaithScout: Building a Community Directory Platform — PensacolaSites</title>
+    <meta name="description" content="How we built FaithScout.com — a directory platform helping people discover and connect with faith communities.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="../" class="logo">Pensacola<span>Sites</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../#about">About</a></li>
+                <li><a href="../#work">Work</a></li>
+                <li><a href="../#packages">Packages</a></li>
+                <li><a href="./">Blog</a></li>
+                <li><a href="../#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay">
+        <ul class="mobile-links">
+            <li><a href="../#about">About</a></li>
+            <li><a href="../#work">Work</a></li>
+            <li><a href="../#packages">Packages</a></li>
+            <li><a href="./">Blog</a></li>
+            <li><a href="../#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <div class="container">
+            <a class="blog-back" href="./">&larr; Back to Blog</a>
+
+            <div class="blog-post-header">
+                <span class="blog-tag">Case Study</span>
+                <h1>FaithScout: Building a Community Directory Platform</h1>
+                <div class="blog-meta">January 2026</div>
+            </div>
+
+            <div class="blog-content">
+                <h2>The Problem Worth Solving</h2>
+                <p>Finding a faith community should not be difficult. Yet for many people, especially those who have recently moved or are exploring their faith for the first time, discovering local churches, ministries, and faith-based organizations often means scrolling through outdated Google Maps listings or word-of-mouth recommendations that may not fit. FaithScout.com was built to solve that problem.</p>
+                <p>The goal was to create a clean, searchable directory platform where people could browse faith communities by location, denomination, service style, and other meaningful criteria. It needed to be welcoming, easy to use, and work flawlessly on any device.</p>
+
+                <h2>Building Directory Functionality from Scratch</h2>
+                <p>Directory platforms are deceptively complex. On the surface, it looks like a list of cards with a search bar. Underneath, there are filtering systems, data structures, pagination concerns, and user flows that all need to work together seamlessly.</p>
+                <p>We built FaithScout's directory engine with clean, hand-coded JavaScript. No heavy frameworks, no third-party directory plugins with their own opinions about how things should work. This gave us full control over how listings are fetched, filtered, sorted, and displayed.</p>
+                <p>The filtering system was a particular focus. Users can narrow results by multiple criteria simultaneously, and the interface updates in real time without full page reloads. Filters are clear, visible, and easy to reset. We avoided the common trap of burying filter options behind dropdowns or modal windows that add friction to the browsing experience.</p>
+
+                <h2>Search That Actually Works</h2>
+                <p>Search is the front door of any directory. If it does not work well, nothing else matters. For FaithScout, we implemented a search system that handles partial matches, common misspellings, and location-based queries gracefully.</p>
+                <p>The search experience was designed to be forgiving. Users do not always know exactly what they are looking for, and the system accounts for that. Results appear quickly, with clear indicators of why each listing matched. If a search returns no results, the interface suggests broadening criteria rather than showing a blank page.</p>
+                <p>We also made sure search works well on mobile, where typing is slower and screen space is limited. The search bar is prominent, results are scannable, and individual listings are tappable with enough spacing to prevent mis-taps.</p>
+
+                <h2>Community-Focused Design</h2>
+                <p>FaithScout is not a transactional product. People are not buying something or signing up for a service. They are looking for a community to belong to. That emotional context shaped every design decision.</p>
+                <p>The visual language is warm and approachable. Colors are inviting without being saccharine. Typography is clear and readable. Listing cards provide enough information to be useful at a glance, including service times, location, and a brief description, without overwhelming the user with data.</p>
+                <p>We also prioritized the individual listing pages. When someone clicks through to a specific community, they see a well-organized profile with all the information they need to make a decision: location details, service schedule, community description, and contact information. Everything is laid out cleanly with clear visual hierarchy.</p>
+
+                <h2>Making Complex Data Mobile-Friendly</h2>
+                <p>Directory platforms are data-heavy by nature. On desktop, you have space for multi-column layouts, sidebar filters, and detailed listing cards. On mobile, all of that needs to collapse into a single-column flow that remains usable.</p>
+                <p>We built FaithScout's responsive layout to reorganize intelligently at each breakpoint. Filters move from a sidebar to a collapsible panel. Listing cards stack vertically and prioritize the most important information. Map views resize and reposition. Nothing is hidden on mobile. It is just presented differently.</p>
+                <p>Touch targets are generous throughout. Buttons, links, and interactive elements all meet accessibility guidelines for minimum tap size. The entire browsing experience can be completed with one thumb on a phone screen, which is how most people will use it.</p>
+
+                <h2>The Result</h2>
+                <p>FaithScout launched as a fast, thoughtful directory platform that makes finding a faith community genuinely easy. The search works, the filters are intuitive, and the design respects both the content and the people using it. Built from Pensacola with the same hand-coded approach we bring to every project, it is a platform designed to connect people with something that matters.</p>
+            </div>
+
+            <div class="blog-cta">
+                <h3>Ready to Build Something?</h3>
+                <p>Let's talk about your project.</p>
+                <a class="btn btn-accent" href="../#contact">Get in Touch</a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="../" class="logo">Pensacola<span>Sites</span></a>
+            <p>Hand-coded with care in Pensacola, FL. &copy; 2026 PensacolaSites.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

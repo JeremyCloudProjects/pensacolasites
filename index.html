@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PensacolaSites — Web Design &amp; Development in Pensacola, FL</title>
+    <meta name="description" content="Hand-coded websites and web apps for Pensacola businesses. No templates. No bloat. Fast turnaround. You own your code.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="logo">Pensacola<span>Sites</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="blog/">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay">
+        <ul class="mobile-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="blog/">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="hero-eyebrow fade-in">Web Development &mdash; Pensacola, FL</p>
+            <h1 class="fade-in">Websites that work.<br>Built to last.</h1>
+            <p class="hero-sub fade-in">Hand-coded, lightning-fast websites built specifically for your business. No templates. No bloat. Just clean code that performs.</p>
+            <div class="hero-actions fade-in">
+                <a href="#packages" class="btn btn-accent">See Packages</a>
+                <a href="#work" class="btn btn-outline-light">View Work</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-divider fade-in"></div>
+            <div class="about-grid">
+                <div class="about-text fade-in">
+                    <h2>Every line written by hand.</h2>
+                    <p>I build websites the right way — no page builders, no bloated plugins, no WordPress themes. Just clean, hand-coded HTML, CSS, and JavaScript tailored to your business.</p>
+                    <p>The result? Sites that load instantly, rank better in search, and actually represent your brand.</p>
+                </div>
+                <div class="about-stats fade-in">
+                    <div class="stat">
+                        <span class="stat-num">5+</span>
+                        <span class="stat-label">Projects Launched</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">100%</span>
+                        <span class="stat-label">Hand-coded</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">Fast</span>
+                        <span class="stat-label">Turnaround</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section section-gray" id="work">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Selected Work</h2>
+                <p>Real projects. Real results.</p>
+            </div>
+            <div class="work-grid">
+                <a href="https://bearstack.ai" target="_blank" rel="noopener noreferrer" class="project-card fade-in">
+                    <span class="project-tag">AI</span>
+                    <h3>BearStack</h3>
+                    <p>AI-powered platform built for modern teams.</p>
+                    <span class="project-link">bearstack.ai &rarr;</span>
+                </a>
+                <a href="https://tablflip.com" target="_blank" rel="noopener noreferrer" class="project-card fade-in">
+                    <span class="project-tag">Web App</span>
+                    <h3>TablFlip</h3>
+                    <p>A custom web application with a clean, focused user experience.</p>
+                    <span class="project-link">tablflip.com &rarr;</span>
+                </a>
+                <a href="https://faithscout.com" target="_blank" rel="noopener noreferrer" class="project-card fade-in">
+                    <span class="project-tag">Directory</span>
+                    <h3>FaithScout</h3>
+                    <p>A platform helping people discover and connect with faith communities.</p>
+                    <span class="project-link">faithscout.com &rarr;</span>
+                </a>
+                <a href="https://flcoastalcollectors.com" target="_blank" rel="noopener noreferrer" class="project-card fade-in">
+                    <span class="project-tag">Business</span>
+                    <h3>FL Coastal Collectors</h3>
+                    <p>A polished business site for a Florida-based collectors community.</p>
+                    <span class="project-link">flcoastalcollectors.com &rarr;</span>
+                </a>
+                <a href="https://anchorupcardshows.com" target="_blank" rel="noopener noreferrer" class="project-card fade-in">
+                    <span class="project-tag">Events</span>
+                    <h3>Anchor Up Card Shows</h3>
+                    <p>Event listings and show management for trading card collectors.</p>
+                    <span class="project-link">anchorupcardshows.com &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages -->
+    <section class="section" id="packages">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Packages</h2>
+                <p>Straightforward pricing. No surprises.</p>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card fade-in">
+                    <div class="package-header">
+                        <h3>Launch</h3>
+                        <div class="package-price">$900</div>
+                        <p class="package-desc">Perfect for getting online fast.</p>
+                    </div>
+                    <ul class="package-features">
+                        <li>Single-page site</li>
+                        <li>Mobile responsive</li>
+                        <li>Contact form</li>
+                        <li>SEO basics</li>
+                        <li>1 revision round</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Get Started</a>
+                </div>
+                <div class="package-card featured fade-in">
+                    <div class="package-badge">Most Popular</div>
+                    <div class="package-header">
+                        <h3>Business</h3>
+                        <div class="package-price">$3,000</div>
+                        <p class="package-desc">A full site that means business.</p>
+                    </div>
+                    <ul class="package-features">
+                        <li>Up to 8 pages</li>
+                        <li>Custom design</li>
+                        <li>Mobile responsive</li>
+                        <li>Contact form</li>
+                        <li>SEO optimized</li>
+                        <li>2 revision rounds</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-accent">Get Started</a>
+                </div>
+                <div class="package-card fade-in">
+                    <div class="package-header">
+                        <h3>Custom</h3>
+                        <div class="package-price">Let's Talk</div>
+                        <p class="package-desc">Anything you can dream up.</p>
+                    </div>
+                    <ul class="package-features">
+                        <li>Full custom build</li>
+                        <li>Web apps &amp; platforms</li>
+                        <li>Any stack</li>
+                        <li>Auth, databases, APIs</li>
+                        <li>Unlimited revisions</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                </div>
+            </div>
+            <p class="packages-note fade-in">You own your code. Hosting, domain, and source files are yours — always. Care plans are available for ongoing maintenance and support.</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-gray" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Start a Project</h2>
+                <p>Tell me about what you're building. I'll get back to you within 24 hours.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <div class="contact-card">
+                        <h4>Based in</h4>
+                        <span>Pensacola, FL</span>
+                    </div>
+                    <div class="contact-card">
+                        <h4>Availability</h4>
+                        <span>Taking new projects</span>
+                    </div>
+                </div>
+                <form class="contact-form fade-in" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="package">Package</label>
+                        <select id="package" name="package">
+                            <option value="">Select a package (optional)</option>
+                            <option value="launch">Launch — $900</option>
+                            <option value="business">Business — $3,000</option>
+                            <option value="custom">Custom — Let's Talk</option>
+                            <option value="unsure">Not sure yet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="What are you building? What do you need?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-accent btn-full" id="submitBtn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#" class="logo">Pensacola<span>Sites</span></a>
+            <p>Hand-coded with care in Pensacola, FL. &copy; 2026 PensacolaSites.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
