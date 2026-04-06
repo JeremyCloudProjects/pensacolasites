@@ -46,22 +46,58 @@
     <header class="hero">
         <div class="hero-overlay"></div>
 
-        <!-- Blue Angels Delta Formation -->
+        <!-- Blue Angels Delta Formation — F/A-18 Hornet side profiles -->
         <div class="ba-formation" aria-hidden="true">
             <div class="ba-group">
-                <!-- Each jet SVG: F/A-18 side profile pointing right + contrail trailing left -->
+                <!--
+                    F/A-18C Hornet silhouette (pointing right):
+                    Rounded radome → steep windscreen → bubble canopy → dorsal spine hump →
+                    canted vertical stabilizer → horizontal stabilators → twin exhaust nozzles.
+                    Swept wing w/ straight trailing edge extends below. LEX shelf under cockpit.
+                    Dual contrails from twin GE F404 engines fade via linearGradient.
+                -->
                 <!-- Jet 1: Lead -->
-                <svg class="ba-jet ba-jet--1" viewBox="-300 0 360 24"><line class="ba-trail" x1="-300" y1="13" x2="4" y2="13"/><path d="M60 12 L50 9 L42 5 L34 8 L26 1 L22 9 L12 7 L6 2 L4 7 L0 11 L0 15 L4 17 L6 22 L12 17 L22 15 L26 23 L34 16 L42 19 L50 15 Z"/></svg>
+                <svg class="ba-jet ba-jet--1" viewBox="-400 0 585 50">
+                    <defs><linearGradient id="tf1"><stop offset="0%" stop-color="#fff" stop-opacity="0"/><stop offset="100%" stop-color="#fff" stop-opacity=".06"/></linearGradient></defs>
+                    <line x1="-400" y1="24" x2="2" y2="24" stroke="url(#tf1)" stroke-width=".8"/>
+                    <line x1="-400" y1="28" x2="2" y2="28" stroke="url(#tf1)" stroke-width=".8"/>
+                    <path d="M180 26 Q174 23 165 21 L158 14 Q154 11 148 11 Q142 11 138 13 L120 12 L100 15 L88 16 L80 6 L74 4 L70 6 L66 16 L50 18 L42 15 L34 11 L30 9 L33 18 L16 20 L0 22 L0 30 L16 34 L33 36 L30 44 L34 42 L42 37 L50 35 L66 34 L86 35 L100 37 L108 46 L120 34 L132 33 L142 34 L152 32 L160 31 Q168 29 174 28 Q178 27 180 26 Z"/>
+                </svg>
                 <!-- Jet 2: Left wing (upper) -->
-                <svg class="ba-jet ba-jet--2" viewBox="-300 0 360 24"><line class="ba-trail" x1="-300" y1="13" x2="4" y2="13"/><path d="M60 12 L50 9 L42 5 L34 8 L26 1 L22 9 L12 7 L6 2 L4 7 L0 11 L0 15 L4 17 L6 22 L12 17 L22 15 L26 23 L34 16 L42 19 L50 15 Z"/></svg>
+                <svg class="ba-jet ba-jet--2" viewBox="-400 0 585 50">
+                    <defs><linearGradient id="tf2"><stop offset="0%" stop-color="#fff" stop-opacity="0"/><stop offset="100%" stop-color="#fff" stop-opacity=".06"/></linearGradient></defs>
+                    <line x1="-400" y1="24" x2="2" y2="24" stroke="url(#tf2)" stroke-width=".8"/>
+                    <line x1="-400" y1="28" x2="2" y2="28" stroke="url(#tf2)" stroke-width=".8"/>
+                    <path d="M180 26 Q174 23 165 21 L158 14 Q154 11 148 11 Q142 11 138 13 L120 12 L100 15 L88 16 L80 6 L74 4 L70 6 L66 16 L50 18 L42 15 L34 11 L30 9 L33 18 L16 20 L0 22 L0 30 L16 34 L33 36 L30 44 L34 42 L42 37 L50 35 L66 34 L86 35 L100 37 L108 46 L120 34 L132 33 L142 34 L152 32 L160 31 Q168 29 174 28 Q178 27 180 26 Z"/>
+                </svg>
                 <!-- Jet 3: Right wing (lower) -->
-                <svg class="ba-jet ba-jet--3" viewBox="-300 0 360 24"><line class="ba-trail" x1="-300" y1="13" x2="4" y2="13"/><path d="M60 12 L50 9 L42 5 L34 8 L26 1 L22 9 L12 7 L6 2 L4 7 L0 11 L0 15 L4 17 L6 22 L12 17 L22 15 L26 23 L34 16 L42 19 L50 15 Z"/></svg>
+                <svg class="ba-jet ba-jet--3" viewBox="-400 0 585 50">
+                    <defs><linearGradient id="tf3"><stop offset="0%" stop-color="#fff" stop-opacity="0"/><stop offset="100%" stop-color="#fff" stop-opacity=".06"/></linearGradient></defs>
+                    <line x1="-400" y1="24" x2="2" y2="24" stroke="url(#tf3)" stroke-width=".8"/>
+                    <line x1="-400" y1="28" x2="2" y2="28" stroke="url(#tf3)" stroke-width=".8"/>
+                    <path d="M180 26 Q174 23 165 21 L158 14 Q154 11 148 11 Q142 11 138 13 L120 12 L100 15 L88 16 L80 6 L74 4 L70 6 L66 16 L50 18 L42 15 L34 11 L30 9 L33 18 L16 20 L0 22 L0 30 L16 34 L33 36 L30 44 L34 42 L42 37 L50 35 L66 34 L86 35 L100 37 L108 46 L120 34 L132 33 L142 34 L152 32 L160 31 Q168 29 174 28 Q178 27 180 26 Z"/>
+                </svg>
                 <!-- Jet 4: Outer left (upper) -->
-                <svg class="ba-jet ba-jet--4" viewBox="-300 0 360 24"><line class="ba-trail" x1="-300" y1="13" x2="4" y2="13"/><path d="M60 12 L50 9 L42 5 L34 8 L26 1 L22 9 L12 7 L6 2 L4 7 L0 11 L0 15 L4 17 L6 22 L12 17 L22 15 L26 23 L34 16 L42 19 L50 15 Z"/></svg>
+                <svg class="ba-jet ba-jet--4" viewBox="-400 0 585 50">
+                    <defs><linearGradient id="tf4"><stop offset="0%" stop-color="#fff" stop-opacity="0"/><stop offset="100%" stop-color="#fff" stop-opacity=".06"/></linearGradient></defs>
+                    <line x1="-400" y1="24" x2="2" y2="24" stroke="url(#tf4)" stroke-width=".8"/>
+                    <line x1="-400" y1="28" x2="2" y2="28" stroke="url(#tf4)" stroke-width=".8"/>
+                    <path d="M180 26 Q174 23 165 21 L158 14 Q154 11 148 11 Q142 11 138 13 L120 12 L100 15 L88 16 L80 6 L74 4 L70 6 L66 16 L50 18 L42 15 L34 11 L30 9 L33 18 L16 20 L0 22 L0 30 L16 34 L33 36 L30 44 L34 42 L42 37 L50 35 L66 34 L86 35 L100 37 L108 46 L120 34 L132 33 L142 34 L152 32 L160 31 Q168 29 174 28 Q178 27 180 26 Z"/>
+                </svg>
                 <!-- Jet 5: Outer right (lower) -->
-                <svg class="ba-jet ba-jet--5" viewBox="-300 0 360 24"><line class="ba-trail" x1="-300" y1="13" x2="4" y2="13"/><path d="M60 12 L50 9 L42 5 L34 8 L26 1 L22 9 L12 7 L6 2 L4 7 L0 11 L0 15 L4 17 L6 22 L12 17 L22 15 L26 23 L34 16 L42 19 L50 15 Z"/></svg>
-                <!-- Jet 6: Tail (far outer upper) -->
-                <svg class="ba-jet ba-jet--6" viewBox="-300 0 360 24"><line class="ba-trail" x1="-300" y1="13" x2="4" y2="13"/><path d="M60 12 L50 9 L42 5 L34 8 L26 1 L22 9 L12 7 L6 2 L4 7 L0 11 L0 15 L4 17 L6 22 L12 17 L22 15 L26 23 L34 16 L42 19 L50 15 Z"/></svg>
+                <svg class="ba-jet ba-jet--5" viewBox="-400 0 585 50">
+                    <defs><linearGradient id="tf5"><stop offset="0%" stop-color="#fff" stop-opacity="0"/><stop offset="100%" stop-color="#fff" stop-opacity=".06"/></linearGradient></defs>
+                    <line x1="-400" y1="24" x2="2" y2="24" stroke="url(#tf5)" stroke-width=".8"/>
+                    <line x1="-400" y1="28" x2="2" y2="28" stroke="url(#tf5)" stroke-width=".8"/>
+                    <path d="M180 26 Q174 23 165 21 L158 14 Q154 11 148 11 Q142 11 138 13 L120 12 L100 15 L88 16 L80 6 L74 4 L70 6 L66 16 L50 18 L42 15 L34 11 L30 9 L33 18 L16 20 L0 22 L0 30 L16 34 L33 36 L30 44 L34 42 L42 37 L50 35 L66 34 L86 35 L100 37 L108 46 L120 34 L132 33 L142 34 L152 32 L160 31 Q168 29 174 28 Q178 27 180 26 Z"/>
+                </svg>
+                <!-- Jet 6: Slot (far outer upper) -->
+                <svg class="ba-jet ba-jet--6" viewBox="-400 0 585 50">
+                    <defs><linearGradient id="tf6"><stop offset="0%" stop-color="#fff" stop-opacity="0"/><stop offset="100%" stop-color="#fff" stop-opacity=".06"/></linearGradient></defs>
+                    <line x1="-400" y1="24" x2="2" y2="24" stroke="url(#tf6)" stroke-width=".8"/>
+                    <line x1="-400" y1="28" x2="2" y2="28" stroke="url(#tf6)" stroke-width=".8"/>
+                    <path d="M180 26 Q174 23 165 21 L158 14 Q154 11 148 11 Q142 11 138 13 L120 12 L100 15 L88 16 L80 6 L74 4 L70 6 L66 16 L50 18 L42 15 L34 11 L30 9 L33 18 L16 20 L0 22 L0 30 L16 34 L33 36 L30 44 L34 42 L42 37 L50 35 L66 34 L86 35 L100 37 L108 46 L120 34 L132 33 L142 34 L152 32 L160 31 Q168 29 174 28 Q178 27 180 26 Z"/>
+                </svg>
             </div>
         </div>
 

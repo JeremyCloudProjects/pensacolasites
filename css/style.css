@@ -358,40 +358,29 @@ h1, h2, h3, h4 {
     animation: ba-fly 20s linear infinite;
 }
 
-/* Each jet: SVG with built-in contrail */
+/* Each jet: SVG with built-in dual contrails + gradient fade */
 .ba-jet {
     position: absolute;
-    height: 20px;
     overflow: visible;
-    fill: rgba(255, 255, 255, 0.13);
-}
-
-/* Contrail line — trails left behind each jet */
-.ba-trail {
-    stroke: rgba(255, 255, 255, 0.05);
-    stroke-width: 0.8;
-    stroke-linecap: round;
+    fill: rgba(255, 255, 255, 0.14);
 }
 
 /* Delta formation: lead at right, rows stagger back-left */
 /* Lead */
-.ba-jet--1 { top: 48%; right: 30%; width: 240px; }
+.ba-jet--1 { top: 48%; right: 28%; width: 320px; height: 28px; }
 /* Row 2 */
-.ba-jet--2 { top: 40%; right: 36%; width: 230px; }
-.ba-jet--3 { top: 56%; right: 36%; width: 230px; }
+.ba-jet--2 { top: 39%; right: 35%; width: 310px; height: 27px; }
+.ba-jet--3 { top: 57%; right: 35%; width: 310px; height: 27px; }
 /* Row 3 */
-.ba-jet--4 { top: 33%; right: 42%; width: 220px; }
-.ba-jet--5 { top: 63%; right: 42%; width: 220px; }
+.ba-jet--4 { top: 31%; right: 42%; width: 300px; height: 26px; }
+.ba-jet--5 { top: 65%; right: 42%; width: 300px; height: 26px; }
 /* Row 4 — slot */
-.ba-jet--6 { top: 26%; right: 48%; width: 210px; }
+.ba-jet--6 { top: 24%; right: 49%; width: 290px; height: 25px; }
 
-/* Rear jets slightly more transparent */
+/* Rear jets fade further */
 .ba-jet--2, .ba-jet--3 { fill: rgba(255, 255, 255, 0.11); }
 .ba-jet--4, .ba-jet--5 { fill: rgba(255, 255, 255, 0.09); }
 .ba-jet--6             { fill: rgba(255, 255, 255, 0.07); }
-.ba-jet--2 .ba-trail, .ba-jet--3 .ba-trail { stroke: rgba(255, 255, 255, 0.04); }
-.ba-jet--4 .ba-trail, .ba-jet--5 .ba-trail { stroke: rgba(255, 255, 255, 0.035); }
-.ba-jet--6 .ba-trail { stroke: rgba(255, 255, 255, 0.03); }
 
 /* Formation drifts left→right, slightly upward */
 @keyframes ba-fly {
