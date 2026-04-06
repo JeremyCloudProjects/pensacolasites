@@ -347,54 +347,56 @@ h1, h2, h3, h4 {
     z-index: 0;
 }
 
-/* Contrails SVG fills the hero */
-.ba-contrails {
+/* The group wraps all jets — one animation moves the whole formation */
+.ba-group {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    animation: ba-drift 18s linear infinite;
+    will-change: transform;
+    animation: ba-fly 20s linear infinite;
 }
 
-.ba-trail {
-    stroke: rgba(255, 255, 255, 0.06);
-    stroke-width: 0.4;
-    stroke-linecap: round;
-    stroke-dasharray: 80;
-    stroke-dashoffset: 80;
-    animation: ba-trail-draw 18s linear infinite;
-}
-
-/* Individual jets — sized and positioned in delta */
+/* Each jet: SVG with built-in contrail */
 .ba-jet {
     position: absolute;
-    width: 48px;
-    height: 24px;
-    will-change: transform;
-    animation: ba-drift 18s linear infinite;
+    height: 20px;
+    overflow: visible;
+    fill: rgba(255, 255, 255, 0.13);
 }
 
-/* Lead jet */
-.ba-jet--1 { top: 46%; left: 50%; margin-left: -24px; margin-top: -12px; }
+/* Contrail line — trails left behind each jet */
+.ba-trail {
+    stroke: rgba(255, 255, 255, 0.05);
+    stroke-width: 0.8;
+    stroke-linecap: round;
+}
+
+/* Delta formation: lead at right, rows stagger back-left */
+/* Lead */
+.ba-jet--1 { top: 48%; right: 30%; width: 240px; }
 /* Row 2 */
-.ba-jet--2 { top: 39%; left: 43%; margin-left: -24px; margin-top: -12px; }
-.ba-jet--3 { top: 53%; left: 43%; margin-left: -24px; margin-top: -12px; }
+.ba-jet--2 { top: 40%; right: 36%; width: 230px; }
+.ba-jet--3 { top: 56%; right: 36%; width: 230px; }
 /* Row 3 */
-.ba-jet--4 { top: 32%; left: 36%; margin-left: -24px; margin-top: -12px; }
-.ba-jet--5 { top: 60%; left: 36%; margin-left: -24px; margin-top: -12px; }
-/* Row 4 */
-.ba-jet--6 { top: 25%; left: 29%; margin-left: -24px; margin-top: -12px; }
+.ba-jet--4 { top: 33%; right: 42%; width: 220px; }
+.ba-jet--5 { top: 63%; right: 42%; width: 220px; }
+/* Row 4 — slot */
+.ba-jet--6 { top: 26%; right: 48%; width: 210px; }
 
-@keyframes ba-drift {
-    0%   { transform: translate(-10vw, 6vh); }
-    100% { transform: translate(10vw, -6vh); }
-}
+/* Rear jets slightly more transparent */
+.ba-jet--2, .ba-jet--3 { fill: rgba(255, 255, 255, 0.11); }
+.ba-jet--4, .ba-jet--5 { fill: rgba(255, 255, 255, 0.09); }
+.ba-jet--6             { fill: rgba(255, 255, 255, 0.07); }
+.ba-jet--2 .ba-trail, .ba-jet--3 .ba-trail { stroke: rgba(255, 255, 255, 0.04); }
+.ba-jet--4 .ba-trail, .ba-jet--5 .ba-trail { stroke: rgba(255, 255, 255, 0.035); }
+.ba-jet--6 .ba-trail { stroke: rgba(255, 255, 255, 0.03); }
 
-@keyframes ba-trail-draw {
-    0%   { stroke-dashoffset: 80; opacity: 0; }
-    10%  { opacity: 1; }
-    90%  { opacity: 1; }
-    100% { stroke-dashoffset: -80; opacity: 0; }
+/* Formation drifts left→right, slightly upward */
+@keyframes ba-fly {
+    0%   { transform: translate(-18vw, 5vh); }
+    100% { transform: translate(18vw, -5vh); }
 }
 
 /* Reduce motion for accessibility */

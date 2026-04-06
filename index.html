@@ -46,24 +46,23 @@
     <header class="hero">
         <div class="hero-overlay"></div>
 
-        <!-- Blue Angels Formation -->
+        <!-- Blue Angels Delta Formation -->
         <div class="ba-formation" aria-hidden="true">
-            <!-- Contrails -->
-            <svg class="ba-contrails" viewBox="0 0 200 200" preserveAspectRatio="none">
-                <line class="ba-trail" x1="-20" y1="97"  x2="100" y2="97"  />
-                <line class="ba-trail" x1="-20" y1="83"  x2="88"  y2="83"  />
-                <line class="ba-trail" x1="-20" y1="111" x2="88"  y2="111" />
-                <line class="ba-trail" x1="-20" y1="69"  x2="76"  y2="69"  />
-                <line class="ba-trail" x1="-20" y1="125" x2="76"  y2="125" />
-                <line class="ba-trail" x1="-20" y1="55"  x2="64"  y2="55"  />
-            </svg>
-            <!-- Jets: F/A-18 silhouettes in delta formation -->
-            <svg class="ba-jet ba-jet--1" viewBox="0 0 80 40" fill="rgba(255,255,255,0.12)"><path d="M0 20 L20 16 L35 0 L40 0 L32 16 L65 14 L72 6 L76 6 L76 10 L68 16 L80 18 L80 22 L68 24 L76 30 L76 34 L72 34 L65 26 L32 24 L40 40 L35 40 L20 24 L0 20Z"/></svg>
-            <svg class="ba-jet ba-jet--2" viewBox="0 0 80 40" fill="rgba(255,255,255,0.10)"><path d="M0 20 L20 16 L35 0 L40 0 L32 16 L65 14 L72 6 L76 6 L76 10 L68 16 L80 18 L80 22 L68 24 L76 30 L76 34 L72 34 L65 26 L32 24 L40 40 L35 40 L20 24 L0 20Z"/></svg>
-            <svg class="ba-jet ba-jet--3" viewBox="0 0 80 40" fill="rgba(255,255,255,0.10)"><path d="M0 20 L20 16 L35 0 L40 0 L32 16 L65 14 L72 6 L76 6 L76 10 L68 16 L80 18 L80 22 L68 24 L76 30 L76 34 L72 34 L65 26 L32 24 L40 40 L35 40 L20 24 L0 20Z"/></svg>
-            <svg class="ba-jet ba-jet--4" viewBox="0 0 80 40" fill="rgba(255,255,255,0.08)"><path d="M0 20 L20 16 L35 0 L40 0 L32 16 L65 14 L72 6 L76 6 L76 10 L68 16 L80 18 L80 22 L68 24 L76 30 L76 34 L72 34 L65 26 L32 24 L40 40 L35 40 L20 24 L0 20Z"/></svg>
-            <svg class="ba-jet ba-jet--5" viewBox="0 0 80 40" fill="rgba(255,255,255,0.08)"><path d="M0 20 L20 16 L35 0 L40 0 L32 16 L65 14 L72 6 L76 6 L76 10 L68 16 L80 18 L80 22 L68 24 L76 30 L76 34 L72 34 L65 26 L32 24 L40 40 L35 40 L20 24 L0 20Z"/></svg>
-            <svg class="ba-jet ba-jet--6" viewBox="0 0 80 40" fill="rgba(255,255,255,0.07)"><path d="M0 20 L20 16 L35 0 L40 0 L32 16 L65 14 L72 6 L76 6 L76 10 L68 16 L80 18 L80 22 L68 24 L76 30 L76 34 L72 34 L65 26 L32 24 L40 40 L35 40 L20 24 L0 20Z"/></svg>
+            <div class="ba-group">
+                <!-- Each jet SVG: F/A-18 side profile pointing right + contrail trailing left -->
+                <!-- Jet 1: Lead -->
+                <svg class="ba-jet ba-jet--1" viewBox="-300 0 360 24"><line class="ba-trail" x1="-300" y1="13" x2="4" y2="13"/><path d="M60 12 L50 9 L42 5 L34 8 L26 1 L22 9 L12 7 L6 2 L4 7 L0 11 L0 15 L4 17 L6 22 L12 17 L22 15 L26 23 L34 16 L42 19 L50 15 Z"/></svg>
+                <!-- Jet 2: Left wing (upper) -->
+                <svg class="ba-jet ba-jet--2" viewBox="-300 0 360 24"><line class="ba-trail" x1="-300" y1="13" x2="4" y2="13"/><path d="M60 12 L50 9 L42 5 L34 8 L26 1 L22 9 L12 7 L6 2 L4 7 L0 11 L0 15 L4 17 L6 22 L12 17 L22 15 L26 23 L34 16 L42 19 L50 15 Z"/></svg>
+                <!-- Jet 3: Right wing (lower) -->
+                <svg class="ba-jet ba-jet--3" viewBox="-300 0 360 24"><line class="ba-trail" x1="-300" y1="13" x2="4" y2="13"/><path d="M60 12 L50 9 L42 5 L34 8 L26 1 L22 9 L12 7 L6 2 L4 7 L0 11 L0 15 L4 17 L6 22 L12 17 L22 15 L26 23 L34 16 L42 19 L50 15 Z"/></svg>
+                <!-- Jet 4: Outer left (upper) -->
+                <svg class="ba-jet ba-jet--4" viewBox="-300 0 360 24"><line class="ba-trail" x1="-300" y1="13" x2="4" y2="13"/><path d="M60 12 L50 9 L42 5 L34 8 L26 1 L22 9 L12 7 L6 2 L4 7 L0 11 L0 15 L4 17 L6 22 L12 17 L22 15 L26 23 L34 16 L42 19 L50 15 Z"/></svg>
+                <!-- Jet 5: Outer right (lower) -->
+                <svg class="ba-jet ba-jet--5" viewBox="-300 0 360 24"><line class="ba-trail" x1="-300" y1="13" x2="4" y2="13"/><path d="M60 12 L50 9 L42 5 L34 8 L26 1 L22 9 L12 7 L6 2 L4 7 L0 11 L0 15 L4 17 L6 22 L12 17 L22 15 L26 23 L34 16 L42 19 L50 15 Z"/></svg>
+                <!-- Jet 6: Tail (far outer upper) -->
+                <svg class="ba-jet ba-jet--6" viewBox="-300 0 360 24"><line class="ba-trail" x1="-300" y1="13" x2="4" y2="13"/><path d="M60 12 L50 9 L42 5 L34 8 L26 1 L22 9 L12 7 L6 2 L4 7 L0 11 L0 15 L4 17 L6 22 L12 17 L22 15 L26 23 L34 16 L42 19 L50 15 Z"/></svg>
+            </div>
         </div>
 
         <div class="container hero-content">
