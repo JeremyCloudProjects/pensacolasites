@@ -102,7 +102,7 @@ h1, h2, h3, h4 {
 .logo {
     font-family: 'Outfit', sans-serif;
     font-weight: 800;
-    font-size: 1.25rem;
+    font-size: 2.1rem;
     color: var(--white);
     text-decoration: none;
     letter-spacing: -0.02em;
@@ -122,10 +122,10 @@ h1, h2, h3, h4 {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     font-family: 'Outfit', sans-serif;
-    font-size: 0.95rem;
+    font-size: 1.6rem;
     font-weight: 600;
     letter-spacing: 0.3px;
-    padding: 8px 16px;
+    padding: 10px 20px;
     border-radius: var(--radius-sm);
     transition: color 0.3s, background 0.3s;
 }
@@ -379,6 +379,11 @@ h1, h2, h3, h4 {
 .ba-jet--5 { top: 84%; right: 40%; width: 290px; height: 85px; }
 /* Row 4 — slot */
 .ba-jet--6 { top: 14%; right: 48%; width: 280px; height: 82px; }
+
+/* Second group starts halfway through — always one formation visible */
+.ba-group--b {
+    animation-delay: -11s;
+}
 
 /* Full flyover: enter from left, exit right, loop seamlessly */
 @keyframes ba-fly {
