@@ -74,17 +74,33 @@ window.addEventListener('resize', () => {
 // ── Contact form ─────────────────────────────────────────
 document.getElementById('contactForm').addEventListener('submit', (e) => {
     e.preventDefault();
+    const form = e.target;
     const btn = document.getElementById('submitBtn');
     const original = btn.textContent;
 
-    btn.textContent = 'Sent!';
+    btn.textContent = 'Sending...';
     btn.disabled = true;
     btn.style.opacity = '0.7';
 
-    setTimeout(() => {
-        btn.textContent = original;
+    fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+    }).then(res => {
+        btn.textContent = res.ok ? 'Sent!' : 'Error — try again';
+        if (res.ok) {
+            setTimeout(() => {
+                btn.textContent = original;
+                btn.disabled = false;
+                btn.style.opacity = '';
+                form.reset();
+            }, 3000);
+        } else {
+            btn.disabled = false;
+            btn.style.opacity = '';
+        }
+    }).catch(() => {
+        btn.textContent = 'Error — try again';
         btn.disabled = false;
         btn.style.opacity = '';
-        e.target.reset();
-    }, 3000);
+    });
 });
