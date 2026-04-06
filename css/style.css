@@ -358,24 +358,25 @@ h1, h2, h3, h4 {
     animation: ba-fly 20s linear infinite;
 }
 
-/* Each jet: SVG with built-in dual contrails + gradient fade */
+/* Each jet: top-down planform SVG with dual contrails */
 .ba-jet {
     position: absolute;
     overflow: visible;
-    fill: rgba(255, 255, 255, 0.14);
+    fill: rgba(255, 255, 255, 0.13);
+    transform: translateY(-50%);
 }
 
 /* Delta formation: lead at right, rows stagger back-left */
 /* Lead */
-.ba-jet--1 { top: 48%; right: 28%; width: 320px; height: 28px; }
+.ba-jet--1 { top: 48%; right: 28%; width: 295px; height: 60px; }
 /* Row 2 */
-.ba-jet--2 { top: 39%; right: 35%; width: 310px; height: 27px; }
-.ba-jet--3 { top: 57%; right: 35%; width: 310px; height: 27px; }
+.ba-jet--2 { top: 35%; right: 35%; width: 285px; height: 58px; }
+.ba-jet--3 { top: 61%; right: 35%; width: 285px; height: 58px; }
 /* Row 3 */
-.ba-jet--4 { top: 31%; right: 42%; width: 300px; height: 26px; }
-.ba-jet--5 { top: 65%; right: 42%; width: 300px; height: 26px; }
+.ba-jet--4 { top: 22%; right: 42%; width: 275px; height: 56px; }
+.ba-jet--5 { top: 74%; right: 42%; width: 275px; height: 56px; }
 /* Row 4 — slot */
-.ba-jet--6 { top: 24%; right: 49%; width: 290px; height: 25px; }
+.ba-jet--6 { top: 10%; right: 49%; width: 265px; height: 54px; }
 
 /* Rear jets fade further */
 .ba-jet--2, .ba-jet--3 { fill: rgba(255, 255, 255, 0.11); }
