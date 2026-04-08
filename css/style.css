@@ -1,5 +1,7 @@
 /* ── Reset & Tokens ───────────────────────────────────── */
 
+.form-honey { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
