@@ -752,6 +752,35 @@ h1, h2, h3, h4 {
     color: var(--gray-400);
 }
 
+/* ── Service Areas ────────────────────────────────────── */
+
+.areas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.areas-grid a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--white);
+    border: 1.5px solid var(--gray-200);
+    border-radius: 8px;
+    color: var(--navy);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.areas-grid a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
 /* ── Contact ──────────────────────────────────────────── */
 
 .contact-grid {
